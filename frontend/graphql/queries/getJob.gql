@@ -1,0 +1,14 @@
+query GetJob($id: String!) {
+  getJob(id: $id) {
+    status
+    errors {
+      ...FError
+    }
+    job {
+      ...FJob
+      user {
+        ...FUser
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+query GetJobByType($type: String!) {
+  getJobByType(type: $type) {
+    status
+    errors {
+      ...FError
+    }
+    jobs {
+      ...FJob
+      user {
+        ...FUser
+      }
+    }
+  }
+}

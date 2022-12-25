@@ -1,0 +1,14 @@
+fragment FJob on Job {
+  id
+  type
+  address
+  contact
+  experience
+  available
+  points
+  league
+  start
+  end
+  sampleCharges
+  extraInfo
+}

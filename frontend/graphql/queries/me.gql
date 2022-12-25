@@ -1,0 +1,14 @@
+query Me {
+  me {
+    status
+    errors {
+      ...FError
+    }
+    user {
+      ...FUser
+      jobs {
+        ...FJob
+      }
+    }
+  }
+}
